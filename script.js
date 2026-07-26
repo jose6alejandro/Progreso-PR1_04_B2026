@@ -2,7 +2,7 @@
 
 const gameData = {
     level: "Nivel 1",
-    totalPointsPossible: 100,
+    totalPointsPossible: 3000,
     players: [] 
 };
 
@@ -89,14 +89,14 @@ function renderPlayerList(data) {
 
         const score = document.createElement('p');
         score.className = 'player-score';
-        score.textContent = `score x${player.score.toLocaleString()}`;
+        score.textContent = `XP: ${player.score.toLocaleString()}`;
         stats.appendChild(score);
 
         const lives = document.createElement('div');
         lives.className = 'player-lives';
         let heartHTML = '';
         for (let i = 0; i < player.lives; i++) {
-            heartHTML += '<span class="heart-icon">♥</span>';
+            // heartHTML += '<span class="heart-icon"> 🎖️ </span>';
         }
         lives.innerHTML = heartHTML;
         stats.appendChild(lives);
