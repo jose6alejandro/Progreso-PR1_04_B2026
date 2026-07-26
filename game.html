@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR1-B2026 - Resultados e Mapa</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PR1-B2026</h1>
+    </header>
+
+    <main>
+        <!-- IZQUIERDA: TABLA DE RESULTADOS -->
+        <div id="player-results">
+            <h2>Tabla de resultados</h2>
+            <ul id="player-list">
+                <!-- Los jugadores se insertarán aquí con JS -->
+            </ul>
+        </div>
+
+        <!-- DERECHA: MAPA DE JUEGO -->
+        <div id="game-map">
+            <div id="map-graphic">
+                
+                <div id="player-position" class="map-marker" title="Tu posición actual"></div>
+
+              <div id="map-legend">
+                <h4>Leyenda</h4>
+                <ul>
+                    <li class="legend-item"><span class="legend-icon" style="background: #3498db;"></span> Posición actual</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
