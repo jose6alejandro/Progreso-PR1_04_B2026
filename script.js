@@ -1,7 +1,7 @@
 // --- DATOS DE JUEGO Y LÓGICA (JS) ---
 
 const gameData = {
-    level: "Nivel 1",
+    level: "Nivel 2",
     totalPointsPossible: 3000,
     players: [] 
 };
@@ -71,7 +71,7 @@ function renderPlayerList(data) {
 
         const name = document.createElement('h3');
         name.className = 'player-name';
-        name.textContent = `${player.name} - ${player.progress}% Complete`;
+        name.textContent = `${player.name} - ${player.progress}% completado`;
         info.appendChild(name);
 
         const progressContainer = document.createElement('div');
