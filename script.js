@@ -1,7 +1,7 @@
 // --- DATOS DE JUEGO Y LÓGICA (JS) ---
 
 const gameData = {
-    level: "Nivel 2",
+    level: "Nivel 3",
     totalPointsPossible: 3000,
     players: [] 
 };
