@@ -22,19 +22,32 @@
             </ul>
         </div>
 
-        <!-- DERECHA: MAPA DE JUEGO -->
-        <div id="game-map">
-            <div id="map-graphic">
-                
-                <div id="player-position" class="map-marker" title="Posición actual"></div>
+        <!-- DERECHA: MAPA Y DESCRIPCION DEL NIVEL -->
+        <div id="map-column">
+            <div id="game-map">
+                <div id="map-graphic">
+                    <div id="player-position" class="map-marker" title="Posición actual"></div>
 
-              <div id="map-legend">
-                <h4>Leyenda</h4>
-                <ul>
-                    <li class="legend-item"><span class="legend-icon" style="background: #3498db;"></span> Posición actual</li>
-                </ul>
-              </div>
+                    <div id="map-legend">
+                        <h4>Leyenda</h4>
+                        <ul>
+                            <li class="legend-item"><span class="legend-icon" style="background: #25a7c7;"></span> Posición actual</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
+            <section id="level-description" aria-labelledby="level-description-title">
+                <div class="description-heading">
+                    <span id="description-level" class="description-code">LVL-03</span>
+                    <h2 id="level-description-title">Descripción del nivel</h2>
+                </div>
+                <p id="level-story" class="level-story">
+                    El equipo entra en la zona de prácticas con una misión clara: avanzar por el circuito,
+                    completar cada estación y convertir el progreso en experiencia. La posición marcada indica
+                    el punto actual del recorrido; cada nuevo desafío desbloquea el siguiente tramo del mapa.
+                </p>
+            </section>
         </div>
     </main>
 
